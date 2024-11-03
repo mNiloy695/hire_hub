@@ -8,6 +8,8 @@ djangorestframework
 environ
 Markdown
 pillow
+psycopg2-binary
 PyJWT
 sqlparse
 tzdata
+whitenoise
