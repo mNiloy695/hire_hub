@@ -1,0 +1,13 @@
+asgiref
+auth-token
+Django
+django-cors-headers
+django-environ
+django-filter
+djangorestframework
+environ
+Markdown
+pillow
+PyJWT
+sqlparse
+tzdata
