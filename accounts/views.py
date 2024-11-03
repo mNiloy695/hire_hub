@@ -30,7 +30,7 @@ class RegistrationView(APIView):
             user=serializer.save()
             token=default_token_generator.make_token(user)
             uid=urlsafe_base64_encode(force_bytes(user.pk))
-            confirm_link=f'http://127.0.0.1:8000/account/active/{uid}/{token}/'
+            confirm_link=f'https://hire-hub-bsf2.vercel.app/account/active/{uid}/{token}/'
             subject="registration confirm mail"
             email_body=render_to_string('confirm_mail.html',{"confirm_link":confirm_link})
             email=EmailMultiAlternatives(subject,'',to=[user.email])
