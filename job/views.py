@@ -102,7 +102,7 @@ class JobDetailView(APIView):
      
 class ApplyListView(APIView):
      def post(self,request):
-          if not request.user.is_authenticated:
+          if request.user.is_authenticated:
                return Response({"detail":"You don't have permission vai"})
           if request.user.type!='Job Seeker':
                 return Response({"detail":"Youuu don't have permission"})
