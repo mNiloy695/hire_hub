@@ -105,7 +105,7 @@ def activate(request,uid64,token):
             if user.type=='Employee':
                 user.is_staff=True
             user.save()
-            return redirect('http://127.0.0.1:5500/src/login.html')
+            return redirect('https://hire-hub-fronted-d4oq.vercel.app/login.html')
         
     return redirect('registration')
         
